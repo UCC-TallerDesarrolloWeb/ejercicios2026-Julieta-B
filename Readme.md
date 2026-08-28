@@ -1,3 +1,19 @@
+## Autor
+* Julieta **Blanco** 👩‍💻
+
+## Contenido/Descripción
+Este repositorio contiene los ejercicios prácticos del Taller de Desarrollo Web.
+
+## Aula Virtual
+[Enlace al Campus Virtual de la UCC](https://campus.ucc.edu.ar)
+
+## Contacto
+| Medio | Detalle |
+|---|---|
+| Email Universitario | 2522810@ucc.edu.ar |
+
+
+
 # SUGERENCIAS ANTES DE EMPEZAR...
 - Emplea **Conventional Commits**
 - Comitea luego de cada ejercicio
