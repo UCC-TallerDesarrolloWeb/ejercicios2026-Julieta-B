@@ -43,7 +43,7 @@ Este repositorio contiene los ejercicios prácticos del Taller de Desarrollo Web
 -  [x] Comentarios
 -  [x] Formulario
 -  [x] Accesibilidad
--  [ ] Multimedia
+-  [x] Multimedia
 
 ### CSS
 -  [ ] Propiedades tipográficas
