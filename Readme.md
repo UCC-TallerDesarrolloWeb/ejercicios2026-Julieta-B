@@ -32,7 +32,7 @@ Este repositorio contiene los ejercicios prácticos del Taller de Desarrollo Web
 
 ### HTML
 -  [x] Primer HTML
--  [ ] Secciones
+-  [x] Secciones
 -  [ ] Títulos
 -  [ ] Listas
 -  [ ] Link
