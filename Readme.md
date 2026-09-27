@@ -35,7 +35,7 @@ Este repositorio contiene los ejercicios prácticos del Taller de Desarrollo Web
 -  [x] Secciones
 -  [x] Títulos
 -  [x] Listas
--  [ ] Link
+-  [x] Link
 -  [ ] Tablas I
 -  [ ] Tablas II
 -  [ ] Tablas III
