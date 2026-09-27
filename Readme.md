@@ -33,8 +33,8 @@ Este repositorio contiene los ejercicios prácticos del Taller de Desarrollo Web
 ### HTML
 -  [x] Primer HTML
 -  [x] Secciones
--  [ ] Títulos
--  [ ] Listas
+-  [x] Títulos
+-  [x] Listas
 -  [ ] Link
 -  [ ] Tablas I
 -  [ ] Tablas II
