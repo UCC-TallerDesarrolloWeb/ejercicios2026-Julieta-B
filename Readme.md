@@ -42,7 +42,7 @@ Este repositorio contiene los ejercicios prácticos del Taller de Desarrollo Web
 -  [x] Tablas VI
 -  [x] Comentarios
 -  [x] Formulario
--  [ ] Accesibilidad
+-  [x] Accesibilidad
 -  [ ] Multimedia
 
 ### CSS

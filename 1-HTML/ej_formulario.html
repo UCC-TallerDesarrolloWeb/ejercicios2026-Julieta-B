@@ -16,49 +16,49 @@
 
     <form action="#" method="post">
         <p>
-            Nombre:<br>
-            <input type="text" name="nombre" size="40" maxlength="40" placeholder="Ingrese su nombre">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" size="40" maxlength="40" placeholder="Ingrese su nombre">
         </p>
 
         <p>
-            Apellido:<br>
-            <input type="text" name="apellido" size="40" maxlength="40" placeholder="Ingrese su apellido">
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" size="40" maxlength="40" placeholder="Ingrese su apellido">
         </p>
 
         <p>
             Sexo:<br>
-            <input type="radio" name="sexo" value="masculino"> Masculino
-            <input type="radio" name="sexo" value="femenino"> Femenino
+            <input type="radio" id="masculino" name="sexo" value="masculino"> <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino"> <label for="femenino">Femenino</label>
         </p>
 
         <p>
-            Edad:<br>
-            <input type="number" name="edad" min="1" max="120" maxlength="3" placeholder="Ej: 20">
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" min="1" max="120" maxlength="3" placeholder="Ej: 20">
         </p>
 
         <p>
-            Email:<br>
-            <input type="email" name="email" size="40" maxlength="50" placeholder="correo@ejemplo.com">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" size="40" maxlength="50" placeholder="correo@ejemplo.com">
         </p>
 
         <p>
-            Usuario:<br>
-            <input type="text" name="usuario" size="40" maxlength="20" placeholder="Elija un usuario">
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" size="40" maxlength="20" placeholder="Elija un usuario">
         </p>
 
         <p>
-            Password:<br>
-            <input type="password" name="password" size="40" maxlength="20" placeholder="Contraseña">
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" size="40" maxlength="20" placeholder="Contraseña">
         </p>
 
         <p>
-            Confirmar Password:<br>
-            <input type="password" name="confirmar_password" size="40" maxlength="20" placeholder="Repita la contraseña">
+            <label for="confirmar_password">Confirmar Password:</label><br>
+            <input type="password" id="confirmar_password" name="confirmar_password" size="40" maxlength="20" placeholder="Repita la contraseña">
         </p>
 
         <p>
-            Tipo de servicio:<br>
-            <select name="servicio">
+            <label for="servicio">Tipo de servicio:</label><br>
+            <select id="servicio" name="servicio">
                 <option value="free">Free</option>
                 <option value="standard">Standard</option>
                 <option value="premium">Premium</option>
@@ -67,15 +67,15 @@
 
         <p>
             Tema de interés:<br>
-            <input type="checkbox" name="tema_politica" value="politica"> Política<br>
-            <input type="checkbox" name="tema_negocios" value="negocios"> Negocios<br>
-            <input type="checkbox" name="tema_tecnologia" value="tecnologia"> Tecnología<br>
-            <input type="checkbox" name="tema_salud" value="salud"> Salud
+            <input type="checkbox" id="tema_politica" name="tema_politica" value="politica"> <label for="tema_politica">Política</label><br>
+            <input type="checkbox" id="tema_negocios" name="tema_negocios" value="negocios"> <label for="tema_negocios">Negocios</label><br>
+            <input type="checkbox" id="tema_tecnologia" name="tema_tecnologia" value="tecnologia"> <label for="tema_tecnologia">Tecnología</label><br>
+            <input type="checkbox" id="tema_salud" name="tema_salud" value="salud"> <label for="tema_salud">Salud</label>
         </p>
 
         <p>
-            Agregue un comentario:<br>
-            <textarea name="comentario" rows="4" cols="40" placeholder="Escriba su comentario aquí..."></textarea>
+            <label for="comentario">Agregue un comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escriba su comentario aquí..."></textarea>
         </p>
 
         <p>
