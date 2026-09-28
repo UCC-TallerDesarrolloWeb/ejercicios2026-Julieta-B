@@ -43,11 +43,43 @@
             color: #0b5394;
             margin-top: 15px;
         }
+
+        /* Variables globales para colores */
+        :root {
+            --btn-fondo: #4CAF50;
+            --btn-fondo-hover: #45a049;
+            --btn-texto: #ffffff;
+        }
+
+        /* estilo y transición de los buttons */
+        .btn-nav {
+            background-color: var(--btn-fondo);
+            color: var(--btn-texto);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 16px;
+            
+            /* La transición suaviza el cambio de color y el tamaño */
+            transition: background-color 0.4s ease, padding 0.4s ease;
+        }
+
+        .btn-nav:hover {
+            background-color: var(--btn-fondo-hover);
+            padding: 10px 25px; /* Se expande hacia los lados */
+        }
     </style>
 </head>
 <body>
 
     <h1>Nuestro Catálogo</h1>
+
+    <nav style="text-align: center; margin-bottom: 30px;">
+        <button class="btn-nav">Catálogo</button>
+        <button class="btn-nav">Carrito de Compras</button>
+    </nav>
 
     <!-- Contenedor Grid -->
     <main>
