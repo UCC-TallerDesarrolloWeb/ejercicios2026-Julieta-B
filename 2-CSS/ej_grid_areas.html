@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Grid Areas</title>
+    <style>
+        /* grid-container en el body */
+        body {
+            display: grid;
+            /* Creamos 4 columnas imaginarias del mismo tamaño */
+            grid-template-columns: repeat(4, 1fr); 
+            
+            /* Dibujo el layout nombrando las áreas */
+            grid-template-areas: 
+                "cabecera cabecera cabecera cabecera"
+                "navegacion navegacion navegacion navegacion"
+                "lateral principal principal principal"
+                "pie pie pie pie";
+            
+            gap: 10px; /* espacio entre los bloques */
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        /* Creo las clases itemN y asigno su grid-area correspondiente */
+        .item1 { 
+            grid-area: cabecera; 
+            background-color: #ff9999; 
+            padding: 20px; 
+        }
+        .item2 { 
+            grid-area: navegacion; 
+            background-color: #99ccff; 
+            padding: 15px; 
+        }
+        .item3 { 
+            grid-area: lateral; 
+            background-color: #99ff99; 
+            padding: 50px 20px; 
+        }
+        .item4 { 
+            grid-area: principal; 
+            background-color: #ffcc99; 
+            padding: 50px 20px; 
+        }
+        .item5 { 
+            grid-area: pie; 
+            background-color: #ccccff; 
+            padding: 20px; 
+        }
+    </style>
+</head>
+<!-- clases itemN a las etiquetas semánticas -->
+<body>
+    <header class="item1">Cabecera de la página</header>
+    <nav class="item2">Links de navegación</nav>
+    <aside class="item3">Menú lateral</aside>
+    <main class="item4">Contenido principal</main>
+    <footer class="item5">Pie de página</footer>
+</body>
+</html>
