@@ -2,41 +2,93 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CV Nombre Apellido</title>
+    <title>CV Julieta Blanco</title>
+    
+    <!-- Agregar favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
+    
+    <!-- Agregar fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 1. Estilo por Tag: Centrar contenido, fuente y gradiente de fondo */
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center; 
+            background: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%); 
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Sombras a los textos y títulos */
+        h1, h2, h3, h4, p {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        /* 2. Estilo por Clase: Diseño de los divs del CV */
+        .seccion {
+            border: 2px solid #333; /* Borde visible */
+            margin: 20px auto; /* Margin */
+            padding: 20px; /* Padding */
+            background-color: rgba(255, 255, 255, 0.7); /* Color plano con opacity */
+            border-radius: 15px; /* Redondear las esquinas de los div */
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombras a los divs */
+            max-width: 600px; 
+            text-align: left; /* Alineamos el texto a la izquierda dentro de las cajas */
+            overflow: auto; /* Evita que la imagen flotante se desborde */
+        }
+
+        /* Imagen circular a la izquierda */
+        .foto {
+            float: left; /* Alineada a la izquierda */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Esquinas circulares */
+            margin-right: 20px;
+        }
+
+        /* 3. Estilo por ID: Color específico para el título principal */
+        #cabecera h1 {
+            color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
 
-<div>
-    <h1>Nombre Alumno</h1>
-    <h2>Ing. en Computacion</h2>
+<!-- Agregamos ID, Clase y la imagen al primer div -->
+<div id="cabecera" class="seccion">
+    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Foto de Perfil" class="foto">
+    <h1>Julieta Blanco</h1>
+    <h2>Ing. en Computación</h2>
 </div>
 
-<div>
+<!-- Agregamos la Clase al resto de los divs principales -->
+<div class="seccion">
     <h3>Datos Personales</h3>
     <p><span>Fecha de Nacimiento:</span> dd/mm/aaaa</p>
     <p><span>Email:</span> email@email.com</p>
 </div>
 
-<div>
-    <h3>Formacion Academica</h3>
-    <p><span>Carrera:</span> Ingeniería XXXXX</p>
+<div class="seccion">
+    <h3>Formación Académica</h3>
+    <p><span>Carrera:</span> Ingeniería en Computación</p>
     <p><span>Universidad:</span> Universidad Católica de Córdoba</p>
-    <p><span>Año de Ingreso:</span> 2018</p>
+    <p><span>Año de Ingreso:</span> 2026</p>
 </div>
 
-<div>
-    <h3>Cursos</h3>
+<div class="seccion">
+    <h3>Cursos y Experiencia</h3>
 
     <div>
-        <h4>Nombre Curso 1</h4>
-        <p><span>Lugar:</span> Nombre Institución</p>
-        <p><span>Año:</span> XXXX </p>
+        <h4>Desarrollo Web</h4>
+        <p><span>Lugar:</span> Chicas digit@lers</p>
+        <p><span>Año:</span> 2022 - 2024</p>
     </div>
 
     <div>
-        <h4>Nombre Curso 2</h4>
-        <p><span>Lugar:</span> Nombre Institución</p>
-        <p><span>Año:</span> XXXX </p>
+        <h4>Intercambio Académico</h4>
+        <p><span>Lugar:</span> Launceston College, Australia</p>
+        <p><span>Año:</span> 2023 - 2024</p>
     </div>
 </div>
 
