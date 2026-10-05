@@ -6,30 +6,49 @@
  * @return Valor que retorna
  */
 
-function cambiarUnidades(id, value){
-    if (isNaN(value)) {
-        alert("Se ingresó un valor inválido");
-        document.lasUnidades.unid_metro.value = "";
-        document.lasUnidades.unid_pulgada.value = "";
-        document.lasUnidades.unid_pie.value = "";
-        document.lasUnidades.unid_yarda.value = "";
-    }else if (id=="metro"){
-        document.lasUnidades.unid_pulgada.value = 39.3701*value;
-        document.lasUnidades.unid_pie.value = 3.28084*value;
-        document.lasUnidades.unid_yarda.value = 1.09361*value;
-    }else if (id == "pulgada") {
-        document.lasUnidades.unid_metro.value = 0.0254 * value;
-        document.lasUnidades.unid_pie.value = 0.083333 * value;
-        document.lasUnidades.unid_yarda.value = 0.027778 * value;
-    } else if (id == "pie") {
-        document.lasUnidades.unid_metro.value = 0.3048 * value;
-        document.lasUnidades.unid_pulgada.value = 12 * value;
-        document.lasUnidades.unid_yarda.value = 0.333333 * value;
-    } else if (id == "yarda") {
-        document.lasUnidades.unid_metro.value = 0.9144 * value;
-        document.lasUnidades.unid_pulgada.value = 36 * value;
-        document.lasUnidades.unid_pie.value = 3 * value;
+const convertirUnidades = (id, valor) => {
+    // Se crean las variables al principio
+    let met, pul, pie, yar;
+
+    // Si el valor ingresado tiene una coma, la reemplazamos por un punto
+    if (typeof valor === 'string' && valor.includes(",")) {
+        valor = valor.replace(",", ".");
     }
+
+    // Validación
+    if (isNaN(valor) || valor === "") {
+        alert("El valor ingresado es incorrecto");
+        met = "";
+        pul = "";
+        pie = "";
+        yar = "";
+    } else if (id === "metro") {
+        met = valor;
+        pul = valor * 39.3701;
+        pie = valor * 3.28084;
+        yar = valor * 1.09361;
+    } else if (id === "pulgada") {
+        met = valor * 0.0254;
+        pul = valor;
+        pie = valor * 0.083333;
+        yar = valor * 0.027778;
+    } else if (id === "pie") {
+        met = valor * 0.3048;
+        pul = valor * 12;
+        pie = valor;
+        yar = valor * 0.333333;
+    } else if (id === "yarda") {
+        met = valor * 0.9144;
+        pul = valor * 36;
+        pie = valor * 3;
+        yar = valor;
+    }
+
+    // Asignación de los valores a los campos de la interfaz de usuario al final
+    document.lasUnidades.unid_metro.value = met;
+    document.lasUnidades.unid_pulgada.value = pul;
+    document.lasUnidades.unid_pie.value = pie;
+    document.lasUnidades.unid_yarda.value = yar;
 }
 
 function convertirgr(id){
