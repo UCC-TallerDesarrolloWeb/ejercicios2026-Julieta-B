@@ -5,8 +5,6 @@
  * @param Parámetro B
  * @return Valor que retorna
  */
-<<<<<<< Updated upstream
-=======
 
 function cambiarUnidades(id, value){
     if (isNaN(value)) {
@@ -47,4 +45,3 @@ function convertirgr(id){
     document.getElementById("grados").value = grad;
     document.getElementById("radianes").value = rad;
 }
->>>>>>> Stashed changes
