@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tienda.js"></script>
+    <title>Carrito</title>
+    <style>
+       main{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        main div{
+            border: 1px solid black;
+            margin: 10px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        img{
+            
+            width:100%;
+        }
+
+        .item1{
+            grid-area: header;
+        }
+        .item2{
+            grid-area: nav;
+            margin: 0px auto;
+        }
+        .item3{
+            grid-area: aside;
+            
+        }
+        .item4{
+            grid-area: main;
+        }
+        .item5{
+            grid-area: footer;
+        }
+
+        .grid-cont{
+            display:grid;
+            grid-template-areas: 
+                "header header header header"
+                "nav nav nav nav"
+                "aside main main main"
+                "footer footer footer footer";
+        }
+
+        a{
+            text-decoration: none;
+            background-color: brown;
+            color: white;
+            font-weight: 500;
+            padding: 5px;
+            transition: backgroud-color 0.8s linear 0.2s;
+        }
+        a:hover{
+            background-color: darkblue;
+            padding: 7px;
+        }
+        footer{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body class="grid-cont" onload="cargarCarrito()">
+    <header class="item1">
+        <h1>Carrito</h1>
+    </header>
+    <nav class="item2">
+        <a href="productos.html">Catálogo de productos</a>
+        <a href="">Carrito de compras</a>
+    </nav>
+    
+    <main class="item4" id="mostrarCarrito">
+        
+    </main>
+    <footer class="item5">
+        info contacto
+    </footer>
+</body>
+</html>

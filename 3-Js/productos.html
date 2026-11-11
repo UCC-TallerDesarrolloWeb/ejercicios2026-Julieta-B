@@ -60,17 +60,20 @@
             background-color: darkblue;
             padding: 7px;
         }
+        footer{
+            text-align: center;
+        }
     </style>
-    <script  src="funcion.js"></script>
+    <script  src="tienda.js"></script>
 </head>
 
-<body class="grid-cont">
+<body class="grid-cont" onload="cargarProductos()">
     <header class="item1">
         <h1>Productos</h1>
     </header>
     <nav class="item2">
         <a href="productos.html">Catálogo de productos</a>
-        <a href="">Carrito de compras</a>
+        <a href="carrito.html">Carrito de compras</a>
     </nav>
     <aside class="item3">
         <form name="filter">
@@ -103,35 +106,20 @@
             </fieldset>
         </form>
     </aside>
-    <main class="item4">
-        <dialog id="modal">
-            <h2>Detalle producto</h2>
-            <h3>Producto 1</h3>
-            <p>descripcion producto</p>
-            <button type="button" onclick="cerrarModal()">
-                Cerrar
-            </button>
-        </dialog>
-        <div class="tarjeta">
-            <img src="https://picsum.photos/300/200?random=1" alt="Producto 1">
-            <h3>Producto 1</h3>
-            <button type="button" onclick="mostrarModal()">
-                Ver detalle producto
-            </button>
-        </div>
+    <dialog id="modal">
+        <h2>Detalle producto</h2>
+        <h3 id="tit-prod">Producto 1</h3>
+        <p id="desc-prod">descripcion producto</p>
+
+        <button type="button" onclick="cerrarModal()">
+            Cerrar
+        </button>
+    </dialog>
+    <main class="item4" id="mostrarCatalogo">
         
-        <div class="tarjeta">
-            <img src="https://picsum.photos/300/200?random=2" alt="Producto 2">
-            <h3>Producto 2</h3>
-        </div>
-        
-        <div class="tarjeta">
-            <img src="https://picsum.photos/300/200?random=3" alt="Producto 3">
-            <h3>Producto 3</h3>
-        </div>
     </main>
     <footer class="item5">
-        dgjnnkdjgnvjk
+        info contacto
     </footer>
 </body>
 </html>

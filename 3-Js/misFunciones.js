@@ -8,7 +8,10 @@
 
 const cambiarUnidadesR = (id, valor) => {
     let metro, pulgada, pie, yarda;
-    const form = document.lasUnidades;
+
+    if( valor.includes (",")){
+        valor=valor.replace("," , ".");
+    }
 
     if (isNaN(valor)) {
         alert("Se introdujo un caracter inválido");
@@ -40,10 +43,10 @@ const cambiarUnidadesR = (id, valor) => {
         }
     }
 
-    form.unid_metro.value = metro;
-    form.unid_pulgada.value = pulgada;
-    form.unid_pie.value = pie;
-    form.unid_yarda.value = yarda;
+    document.lasUnidades.unid_metro.value = Math.round(metro*100)/100;
+    document.lasUnidades.unid_pulgada.value = Math.round(pulgada*100)/100;
+    document.lasUnidades.unid_pie.value = Math.round(pie*100)/100;
+    document.lasUnidades.unid_yarda.value = Math.round(yarda*100)/100;
 };
 
 function cambiarUnidades(id,valor){
@@ -107,4 +110,11 @@ function suma() {
     n1=Number(document.getElementsByName("sum_num1")[0].value);
     n2=document.getElementsByName("sum_num2")[0].value;
     document.getElementsByName("sum_total")[0].value = n1 + Number(n2);
+}
+
+function resta() {
+    var n1, n2;
+    n1=Number(document.getElementsByName("res_num1")[0].value);
+    n2=document.getElementsByName("res_num2")[0].value;
+    document.getElementsByName("res_total")[0].innerHTML = n1 - Number(n2);
 }
